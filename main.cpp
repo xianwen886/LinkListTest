@@ -110,8 +110,8 @@ static void list_free(node_t **list)
     if (ptr == NULL) {
     	return;
 	}
-    while(ptr->next != NULL) {
 
+    while(ptr->next != NULL) {
         tmp = ptr;
         ptr = ptr->next;
         free(tmp);
